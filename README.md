@@ -18,7 +18,7 @@ git config --global core.editor notepad
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/k3ntd4i/practicas_tutoriales_sfml/tree/k3nt
+git clone https://github.com/k3ntd4i/practicas_tutoriales_sfml
 ```
 
 ### 2. Crear la rama propia
