@@ -16,10 +16,12 @@ $(EXECUTABLE): $(OBJECTS)
 	-lfreetype \
 	-lwinmm \
 	-lgdi32 \
-	-mwindows
+	-mwindows \
+	-std=c++20
 
 .cpp.o:
 	g++ -c $< -o $@ -I"C:\build-SFML\SFML-2.6.1\include" -DSFML_STATIC
 
 clean:
-	rm -f $(OBJECTS) $(EXECUTABLE)
+	@if [ -e $(OBJECTS) ]; then rm $(OBJECTS); fi; \
+	if [ -e $(EXECUTABLE) ]; then rm $(EXECUTABLE); fi
